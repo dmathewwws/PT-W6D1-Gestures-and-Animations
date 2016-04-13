@@ -14,13 +14,7 @@ class PinchGestureViewController: UIViewController {
     
     @IBAction func pinchedMyView(sender: UIPinchGestureRecognizer) {
         
-        redBox.transform = CGAffineTransformScale(redBox.transform, sender.scale, sender.scale)
-        
-        sender.scale = 1.0;
-
-        
-        print("Pinched my View")
-        
+        redBox.transform = CGAffineTransformMakeScale(sender.scale, sender.scale)
         
     }
     

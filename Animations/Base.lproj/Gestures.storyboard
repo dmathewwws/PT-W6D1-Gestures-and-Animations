@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rlA-Jb-tTF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rlA-Jb-tTF">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -102,32 +102,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-Wp-agP">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-Wp-agP" userLabel="Red Box">
                                 <rect key="frame" x="225" y="225" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.20784313730000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="nJu-YS-2f8"/>
-                                    <constraint firstAttribute="width" constant="150" id="w5q-fc-l4Y"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="nOi-Xh-jJR" appends="YES" id="v3U-S9-Ncy"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="X6L-Wp-agP" firstAttribute="centerX" secondItem="asC-9H-OiD" secondAttribute="centerX" id="8ZC-zg-1Ju"/>
-                            <constraint firstItem="X6L-Wp-agP" firstAttribute="centerY" secondItem="asC-9H-OiD" secondAttribute="centerY" id="SaG-c8-8ny"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lM3-Ue-ZWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="nOi-Xh-jJR">
-                    <connections>
-                        <action selector="tappedView:" destination="OaU-4e-AYP" id="EJ5-yn-aEe"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1844" y="-129"/>
         </scene>
@@ -148,32 +132,21 @@
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.20784313730000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="fOH-Tc-h1e"/>
-                                    <constraint firstAttribute="width" constant="150" id="kgB-QS-UBG"/>
+                                    <constraint firstAttribute="height" constant="150" id="ASw-5F-UHc"/>
+                                    <constraint firstAttribute="width" constant="150" id="pUl-SY-vFI"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="7eV-wW-x1o" appends="YES" id="GKD-3T-oXw"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6fK-Iw-3mN" firstAttribute="centerX" secondItem="68l-0o-sAc" secondAttribute="centerX" id="U5a-1V-NkP"/>
-                            <constraint firstItem="6fK-Iw-3mN" firstAttribute="centerY" secondItem="68l-0o-sAc" secondAttribute="centerY" id="fAt-RT-c3d"/>
+                            <constraint firstItem="6fK-Iw-3mN" firstAttribute="centerX" secondItem="68l-0o-sAc" secondAttribute="centerX" id="O9t-8i-afB"/>
+                            <constraint firstItem="6fK-Iw-3mN" firstAttribute="centerY" secondItem="68l-0o-sAc" secondAttribute="centerY" id="m8p-OH-pQV"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="redBox" destination="6fK-Iw-3mN" id="GMW-Wh-62C"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dkq-ct-OKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="7eV-wW-x1o">
-                    <connections>
-                        <action selector="pinchedMyView:" destination="LaR-gC-YH2" id="pR5-Ga-jWB"/>
-                    </connections>
-                </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1844" y="554"/>
+            <point key="canvasLocation" x="1844" y="1221"/>
         </scene>
         <!--Rotate Gesture View Controller-->
         <scene sceneID="uyV-gX-bDL">
@@ -187,48 +160,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F76-u6-mJs">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F76-u6-mJs">
                                 <rect key="frame" x="225" y="225" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.20784313730000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="GB5-bw-5ic"/>
-                                    <constraint firstAttribute="width" constant="150" id="aac-VT-jB6"/>
-                                </constraints>
+                                <gestureRecognizers/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaZ-je-7G3">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vaZ-je-7G3">
                                 <rect key="frame" x="250" y="77" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="1j0-gc-mhT"/>
-                                    <constraint firstAttribute="height" constant="100" id="vpq-BL-CzB"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="vaZ-je-7G3" firstAttribute="top" secondItem="Duq-6c-wXI" secondAttribute="bottom" constant="13" id="7L5-fQ-OcY"/>
-                            <constraint firstItem="vaZ-je-7G3" firstAttribute="centerX" secondItem="ho9-Ob-gV4" secondAttribute="centerX" id="UTi-Ap-t2H"/>
-                            <constraint firstItem="F76-u6-mJs" firstAttribute="centerY" secondItem="ho9-Ob-gV4" secondAttribute="centerY" id="ZvM-om-QT8"/>
-                            <constraint firstItem="F76-u6-mJs" firstAttribute="centerX" secondItem="ho9-Ob-gV4" secondAttribute="centerX" id="fES-BI-8vm"/>
-                        </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Ofs-ne-Qwt" appends="YES" id="PTv-kb-R6t"/>
-                        </connections>
                     </view>
-                    <connections>
-                        <outlet property="blueBox" destination="vaZ-je-7G3" id="HKE-5Q-D1N"/>
-                        <outlet property="redBox" destination="F76-u6-mJs" id="eBT-u0-RC3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CwV-Ji-uF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <rotationGestureRecognizer id="Ofs-ne-Qwt">
-                    <connections>
-                        <action selector="rotatedView:" destination="5sd-dI-BQL" id="ER5-C3-3EW"/>
-                    </connections>
-                </rotationGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1850" y="1281"/>
+            <point key="canvasLocation" x="1844" y="543"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ffi-v4-mZA">

@@ -10,15 +10,5 @@ import UIKit
 
 class RotateGestureViewController: UIViewController {
     
-    @IBOutlet weak var redBox: UIView!
-    @IBOutlet weak var blueBox: UIView!
-    
-    @IBAction func rotatedView(sender: UIRotationGestureRecognizer) {
-        
-        blueBox.transform = CGAffineTransformRotate(redBox.transform, sender.rotation)
-        
-
-        
-    }
 
 }

@@ -16,18 +16,9 @@ class SignupViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    
-        UIView.animateWithDuration(2, animations: { () -> Void in
-            //code for what you want to animate
-            
-                self.passwordTextfield.hidden = false
-            
-            }) { (success) -> Void in
-                //code to run after animation is complete
-                
-
-                
-        }
+        
+        
+        
         
     }
 
@@ -41,10 +32,8 @@ class SignupViewController: UIViewController {
         let shake = CAKeyframeAnimation()
         shake.keyPath = "position.x"
         shake.duration = 1
+
         
-        shake.keyTimes = [0, 0.25, 0.5, 0.75, 1]
-        shake.values = [0, -10, 10, -10, 0]
-        shake.additive = true
         shake.repeatCount = 1
         
         passwordTextfield.layer.addAnimation(shake, forKey: "shake")
