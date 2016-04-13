@@ -17,16 +17,10 @@ class SignupViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     
-        UIView.animateWithDuration(2, animations: { () -> Void in
-            //code for what you want to animate
+        UIView.animateWithDuration(2) {
             
-                self.passwordTextfield.hidden = false
+            self.passwordTextfield.hidden = false
             
-            }) { (success) -> Void in
-                //code to run after animation is complete
-                
-
-                
         }
         
     }
